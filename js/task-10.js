@@ -14,7 +14,7 @@ const aLotOfBoxes = document.querySelector('#boxes');
 createSquares.addEventListener('click', createSomeSquares);
 
 // Додаємо слухач подій на кнопку очистити
-destroySquares.addEventListener('click', resetBoxes);
+destroySquares.addEventListener('click', destroyBoxes);
 
 // Функція створення квадратів
 function createSomeSquares() {
@@ -51,7 +51,7 @@ function getRandomHexColor() {
 }
 
 // Функція очистки загального контейнера
-function resetBoxes() {
+function destroyBoxes() {
   inputSquares.value = '';
   aLotOfBoxes.innerHTML = '';
 }
