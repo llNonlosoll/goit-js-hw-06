@@ -9,6 +9,6 @@ function symbolsControl() {
     return textInput.classList.add('valid');
   }
   console.log(textInput.value.length);
-  textInput.classList.add('invalid');
-  return textInput.classList.remove('valid');
+  textInput.classList.remove('valid');
+  return textInput.classList.add('invalid');
 }
