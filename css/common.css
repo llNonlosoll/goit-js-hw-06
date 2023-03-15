@@ -26,8 +26,10 @@ button {
 .gallery {
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 
 .gallery-list-item img {
+  display: block;
   width: 600px;
 }
