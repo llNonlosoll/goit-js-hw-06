@@ -2,7 +2,7 @@ const nameSpan = document.querySelector('#name-output');
 
 const inputName = document.querySelector('#name-input');
 
-inputName.addEventListener('change', onInputChange);
+inputName.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
   if (event.currentTarget.value !== '') {
