@@ -3,12 +3,11 @@ const textInput = document.querySelector('#validation-input');
 textInput.addEventListener('blur', symbolsControl);
 
 function symbolsControl() {
-  if (textInput.value.length === Number(textInput.dataset.length)) {
-    console.log(textInput.value.length);
+  if (textInput.value.trim().length === Number(textInput.dataset.length)) {
     textInput.classList.remove('invalid');
     return textInput.classList.add('valid');
   }
-  console.log(textInput.value.length);
+
   textInput.classList.remove('valid');
   return textInput.classList.add('invalid');
 }

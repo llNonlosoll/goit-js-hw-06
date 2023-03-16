@@ -31,7 +31,6 @@ function createSomeSquares() {
       item.style.backgroundColor = getRandomHexColor();
       squaresArr.push(item);
     }
-    // console.log(squaresArr);
 
     // Розпилюємо квадрати у загальний контейнер
     aLotOfBoxes.append(...squaresArr);
@@ -46,7 +45,6 @@ function getRandomHexColor() {
   const color = `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
-  // console.log(color);
   return color;
 }
 

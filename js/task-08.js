@@ -14,7 +14,7 @@ function onFormSubmit(event) {
     password,
   };
 
-  if (formElements.email.value !== '' && formElements.password.value !== '') {
+  if (formElements.email.value.trim() !== '' && formElements.password.value.trim() !== '') {
     console.log(formData);
     return form.reset();
   }

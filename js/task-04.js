@@ -9,11 +9,9 @@ let counterValue = 0;
 addCounter.addEventListener('click', () => {
   counterValue += 1;
   counter.textContent = counterValue;
-  console.log(counterValue);
 });
 
 removeCounter.addEventListener('click', () => {
   counterValue -= 1;
   counter.textContent = counterValue;
-  console.log(counterValue);
 });

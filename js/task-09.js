@@ -12,5 +12,4 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
   bodyForColor.style.backgroundColor = color;
   colorText.textContent = color;
-  return console.log(color);
 }
